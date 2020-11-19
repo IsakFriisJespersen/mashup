@@ -1,0 +1,49 @@
+Installation and execution:
+Install the dependencies with the command "npm install"
+Run the project with "npm run start" this will run the server.js file and host the application on localhost:8080
+
+Run test:
+Run the test with "npm run test".
+
+Available endpoints:
+GET
+'/mashup/:mbid'
+
+How to:
+Start the application "npm run start"
+
+Use for example POSTMAN to send requests to the server.
+
+1. Search får a mashup with the endpoint 'mashup/:mbid'
+Example: localhost:8080/mashup/0383dadf-2a4e-4d10-a46a-e9e041da8eb3
+
+This brings you a Successful json response:
+
+{
+    "mbid": "0383dadf-2a4e-4d10-a46a-e9e041da8eb3",
+    "description": "<p class=\"mw-empty-elt\">\n</p>\n\n<p class=\"mw-empty-elt\">\n\n</p>\n<p><b>Queen</b>
+    are a British rock band formed in London in 1970. Their classic line-up was Freddie Mercury (lead vocals and piano),
+     Brian May (lead guitar and vocals), Roger Taylor (drums and vocals) and John Deacon (bass guitar)....
+     ....
+     "albums": [
+             {
+                 "title": "TREE",
+                 "id": "b6d1c126-da44-4a0c-863f-9112f5095b71",
+                 "image": "Not found"
+             },
+             {
+                 "title": "WITH",
+                 "id": "62a31231-b8dd-4486-9568-050b51208025",
+                 "image": "Not found"
+             },...
+             ...
+             }
+         ]
+     }
+}
+
+Example on json error:
+
+{
+    "error": "No artist found! Try with another mbid "
+}
